@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+</head>
+<body>
+    {% if mensaje_error %}
+    <p>{{ mensaje_error }}</p>
+    {% endif %}
+    <form action="/login" method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <br>
+        <input type="password" name="contrasena" placeholder="Contraseña" required>
+        <br>
+        <input type="submit" value="Iniciar sesión">
+    </form>
+</body>
+</html>
